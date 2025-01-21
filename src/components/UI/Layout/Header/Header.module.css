@@ -1,0 +1,16 @@
+.header {
+  height: 48px;
+
+  padding: 0 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(183, 183, 181);
+}
+
+.headerTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
