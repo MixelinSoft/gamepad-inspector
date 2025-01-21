@@ -11,7 +11,10 @@ const gamepadsSlice = createSlice({
   initialState,
   reducers: {
     setGamepads: (state, { payload }) => {
-      state.gamepads = payload;
+      if (JSON.stringify(state.gamepads) !== JSON.stringify(payload)) {
+        state.gamepads = payload;
+        console.log('Gamepads Updated');
+      }
     },
   },
 });
