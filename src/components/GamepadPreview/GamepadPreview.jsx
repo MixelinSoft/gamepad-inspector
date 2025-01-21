@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './GamepadPreview.module.css';
 import ButtonTest from '../tests/ButtonTest/ButtonTest';
+import { parseGamepadButtons } from '../../utils/parseGamepadButtons';
 
 const GamepadPreview = (props) => {
   const [gamepads, setGamepads] = useState([]);
@@ -62,7 +63,7 @@ const GamepadPreview = (props) => {
             <p>
               <strong>Нажатые кнопки:</strong>{' '}
               {pressedButtons[gamepad.index]?.length > 0
-                ? pressedButtons[gamepad.index].join(', ')
+                ? parseGamepadButtons(pressedButtons[gamepad.index])
                 : 'Нет'}
             </p>
           </div>
