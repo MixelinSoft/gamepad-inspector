@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 24px;
+
+  align-content: center;
+  text-align: center;
+
+  border-radius: 6px 6px 0 0;
+
+  background-color: rgb(183, 183, 181);
+
+  cursor: default;
+}
