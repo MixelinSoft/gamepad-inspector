@@ -1,0 +1,78 @@
+.gamepadSchemeContainer {
+  position: relative;
+  width: 320px;
+
+  border: 1px solid red;
+}
+
+.gamepadSchemeImage {
+  width: 320px;
+}
+
+.button {
+  position: absolute;
+  display: block;
+
+  height: 13.5px;
+  width: 13.5px;
+
+  border-radius: 50%;
+
+  font-weight: 600;
+  line-height: 0;
+
+  align-content: center;
+  text-align: center;
+
+  color: black;
+  background-color: transparent;
+
+  transition: all 0.08s linear;
+}
+
+.buttonA {
+  top: 80.4px;
+  right: 72.8px;
+}
+
+.buttonB {
+  top: 61.2px;
+  right: 52.3px;
+}
+
+.buttonX {
+  top: 61.2px;
+  right: 93.4px;
+}
+
+.buttonY {
+  top: 42px;
+  right: 72.8px;
+}
+
+.pressed {
+  color: white;
+  background-color: rgb(191, 0, 0);
+}
+
+.xboxBumper {
+  position: absolute;
+  width: 59px;
+
+  top: 10.4px;
+
+  opacity: 0;
+
+  transition: opacity 0.08s linear;
+}
+
+.xboxBumperPressed {
+  opacity: 1;
+}
+.xboxLB {
+  left: 57px;
+}
+.xboxRB {
+  transform: scaleX(-1);
+  right: 57px;
+}

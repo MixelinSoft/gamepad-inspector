@@ -3,6 +3,7 @@ import styles from './GamepadPreview.module.css';
 import ButtonTest from '../tests/ButtonTest/ButtonTest';
 import { parseGamepadButtons } from '../../utils/parseGamepadButtons';
 import { useSelector } from 'react-redux';
+import GamepadScheme from './GamepadScheme/GamepadScheme';
 
 const GamepadPreview = (props) => {
   // Get Gampads From Store
@@ -10,7 +11,7 @@ const GamepadPreview = (props) => {
 
   return (
     <div>
-      {gamepads.length > 0 && (
+      {gamepads.length > 0 ? (
         <div>
           <div>Name: {gamepads[0].id}</div>
           <div>Index: {gamepads[0].index}</div>
@@ -22,7 +23,10 @@ const GamepadPreview = (props) => {
             )}
           </div>
           <div></div>
+          <GamepadScheme gamepad={gamepads[0]} />
         </div>
+      ) : (
+        <div>No Gamepads Connected</div>
       )}
     </div>
   );
