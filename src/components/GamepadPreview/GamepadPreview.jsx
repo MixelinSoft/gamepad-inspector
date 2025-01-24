@@ -19,7 +19,12 @@ const GamepadPreview = (props) => {
             Pressed Button:
             {gamepads[0].buttons.map(
               (button, id) =>
-                button.pressed && <span> {parseGamepadButtons(id)}</span>,
+                button.pressed && (
+                  <span key={id}>
+                    {parseGamepadButtons(id)}
+                    {id}
+                  </span>
+                ),
             )}
           </div>
           <div></div>

@@ -1,0 +1,7 @@
+.transparent {
+  fill: transparent;
+}
+
+.pressed {
+  fill: rgb(191, 0, 0);
+}
