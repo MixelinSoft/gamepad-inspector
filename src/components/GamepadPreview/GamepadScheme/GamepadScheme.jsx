@@ -1,7 +1,4 @@
 import styles from './GamepadScheme.module.css';
-import xboxLayout from '../../../assets/gamepads/xbox/main.png';
-import xboxLB from '../../../assets/gamepads/xbox/LB.png';
-import xboxLT from '../../../assets/gamepads/xbox/LT.png';
 import XboxOne from './schemes/XboxOne';
 
 const GamepadScheme = (props) => {

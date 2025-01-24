@@ -21,8 +21,7 @@ const GamepadPreview = (props) => {
               (button, id) =>
                 button.pressed && (
                   <span key={id}>
-                    {parseGamepadButtons(id)}
-                    {id}
+                    {parseGamepadButtons(id)}({id})
                   </span>
                 ),
             )}
