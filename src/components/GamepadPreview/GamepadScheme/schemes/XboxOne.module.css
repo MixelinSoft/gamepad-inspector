@@ -5,3 +5,7 @@
 .pressed {
   fill: rgb(191, 0, 0);
 }
+
+.leftStick {
+  /* transform: translate(10px, 10px); */
+}
